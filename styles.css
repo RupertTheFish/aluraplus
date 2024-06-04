@@ -1,0 +1,174 @@
+/* Importando fontes do projeto */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Criando variáveis como boa prática de código. */
+:root{
+    --primary-color: #FFFFFF;  
+    --secondary-color: #C0C0C0;
+    --tertiary-color: #EC2F46;
+    --button-color: #167BF7;
+    --background-color: #00030C;
+    --hover-color:#348df9;
+    --primary-font: 'Inter'
+}
+
+/* Resetando parâmentros básicos CSS para ter maior controle sobre o design da página. */
+
+*{
+    padding: 0;
+    margin: 0;  
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.principal{
+    background-image: url("images/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__botao{
+    background-color: var(--button-color);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--primary-color);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    
+}
+
+.container__aviso{
+        font-size: 12px;
+        color: var(--secondary-color);
+}
+
+.container___titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto{
+    color: var(--secondary-color);
+}
+
+.secundario_botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--primary-color);
+}
+
+.lista__item{
+    color: var(--primary-color);
+    font-size: 32px;
+}
+
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__logo{
+    margin-top: 4em;
+    width: 6em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 1.5em auto;
+}
+
+.lista__link a{
+    font-size: 16px;
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.rodape__texto{
+    font-size: 14px;
+    color: var(--secondary-color);
+    margin: 1em 0;
+}
+
+.lista__link a:hover {
+    color: var(--button-color);
+}
+
+.lista__link a:active {
+    color: purple;
+}
+
+.container__botao:hover {
+    background-color: var(--hover-color);
+    color: var(--background-color);
+}
